@@ -17,7 +17,7 @@ public:
     Roster();
     ~Roster();
 
-    void add(std::string studentID, std::string firstName, std::string lastName, std::string emailAddress, int age, int daysToComplete[], DegreeProgram deg);
+    void add(std::string studentID, std::string firstName, std::string lastName, std::string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram deg);
     void remove(std::string studentID);
     void printAll() const;
     void printAverageDaysInCourse(std::string studentID) const;

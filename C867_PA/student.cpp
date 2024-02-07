@@ -9,11 +9,11 @@
 #include "student.hpp"
 #include <iostream>
 
-Student::Student(std::string studentID, std::string firstName, std::string lastName, std::string emailAddress, int age, int daysToComplete[], DegreeProgram degreeProgram)
+Student::Student(std::string studentID, std::string firstName, std::string lastName, std::string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram degreeProgram)
     : studentID(studentID), firstName(firstName), lastName(lastName), emailAddress(emailAddress), age(age), degreeProgram(degreeProgram) {
-    for (int i = 0; i < 3; ++i) {
-        this->daysToComplete[i] = daysToComplete[i];
-    }
+    daysToComplete[0] = daysInCourse1;
+    daysToComplete[1] = daysInCourse2;
+    daysToComplete[2] = daysInCourse3;
 }
 
 Student::~Student() {}

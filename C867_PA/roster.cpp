@@ -17,9 +17,8 @@ Roster::~Roster() {
     }
 }
 
-void Roster::add(std::string studentID, std::string firstName, std::string lastName, std::string emailAddress, int age, int daysToComplete[], DegreeProgram deg) {
-    int days[3] = {daysToComplete[0], daysToComplete[1], daysToComplete[2]};
-    classRosterArray[++lastIndex] = new Student(studentID, firstName, lastName, emailAddress, age, days, deg);
+void Roster::add(std::string studentID, std::string firstName, std::string lastName, std::string emailAddress, int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram deg) {
+    classRosterArray[++lastIndex] = new Student(studentID, firstName, lastName, emailAddress, age, daysInCourse1, daysInCourse2, daysInCourse3, deg);
 }
 
 void Roster::remove(std::string studentID) {
